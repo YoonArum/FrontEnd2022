@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>시멘틱 태그</title>
+        <style>
+            /*내부 스타일*/
+            /*선택자*/
+
+            * {
+                /*all*/
+                margin: 0;
+            }
+            ul {
+                /*태그*/
+                margin: 10px;
+                background-color: lightblue;
+            }
+            .idc1 {
+                /*class*/
+                background-color: darkblue;
+            }
+            #sid2 {
+                /*id*/
+                background-color: blueviolet;
+            }
+            footer,
+            header {
+                /*복합*/
+                background-color: brown; 
+                margin:  20px 10px;
+                /* 시계방향 */
+                /* margin-top: 20px;
+                margin-right: 10px;
+                margin-bottom: 30px;
+                margin-left: 50px; */
+                padding: 30px;
+                width: 500px;
+                height: 60px;
+                border: 50px; border-color: darkblue; border-style: dashed;
+            }
+            header span{
+              background-color: white;            
+            }
+            
+            nav > ul {
+                /*id 없이 자식*/
+                background-color: lightcoral; list-style: none;
+            }
+            aside li{
+              background-color: indianred;
+            }
+            section[id]{ /*속성*/
+              color :crimson;
+            }
+            a{text-decoration: none; color: white; font-size: 30px;}
+            a:hover {
+              background-color: white;color: coral;
+            }
+            a:active{
+              background-color: blue;
+            }
+          aside li{
+            list-style: decimal;
+          }
+          section ul{
+            border-left: 10px solid aqua;
+                        
+            border-radius:  50px;
+          }
+        </style>
+    </head>
+    <body>
+        <header><span>최창민</span></header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#sid1">개인정보</a>
+                </li>
+                <li>
+                    <a href="#sid2">학력사항</a>
+                </li>
+                <li>
+                    <a href="#sid3">자격사항</a>
+                </li>
+                <li>
+                    <a href="#sid4">메뉴4</a>
+                </li>
+            </ul>
+        </nav>
+        <main>
+            <section id="sid1">
+                <h1>개인정보</h1>
+                <ul>
+                    <li class="idc1"></li>
+                    <li class="idc2"></li>
+                </ul>
+            </section>
+            <section id="sid2">
+                <h1>학력사항</h1>
+                <ul>
+                    <li class="idc1"></li>
+                    <li class="idc2"></li>
+                </ul>
+            </section>
+            <section id="sid3">
+                <h1>자격사항</h1>
+                <ul>
+                    <li class="idc1"></li>
+                    <li class="idc2"></li>
+                </ul>
+            </section>
+            <section >
+                <h1>언어</h1>
+                <ul>
+                    <li class="idc1"></li>
+                    <li class="idc2"></li>
+                </ul>
+            </section>
+
+            <aside id=" sid5">
+                <h1>사이트</h1>
+                <ul>
+                    <li class="idca1"></li>
+                    <li class="idca1"></li>
+                </ul>
+            </aside>
+            <footer>
+                <p>naver</p>
+            </footer>
+        </main>
+    <!--
+
+    
+    <div class="header" style="background-color: deeppink; width: auto; height: 20px;">
+      <ul style="background-color: ; width: auto; height: 20px;">
+        <li class="liv1"></li>
+        <li class="liv2"></li>
+        <li class="liv3"></li>
+      </ul>
+    </div>
+    <div class="dvc2">
+      <ul>
+        <li class="liv1"></li>
+        <li class="liv2"></li>
+        <li class="liv3"></li>
+      </ul>
+    </div>
+    <div class="dvc3">
+      <ul>
+        <li class="liv1"></li>
+        <li class="liv2"></li>
+        <li class="liv3"></li>
+      </ul>
+    </div>
+    <div class="dvc4">
+    <ul>
+      <li class="liv1"></li>
+      <li class="liv2"></li>
+      <li class="liv3"></li>
+    </ul>
+  </div>
+  <div class="dvc5">
+    <ul>
+      <li class="liv1"></li>
+      <li class="liv2"></li>
+      <li class="liv3"></li>
+    </ul>
+  </div>
+  <div class="dvc6">
+    <ul>
+      <li class="liv1"></li>
+      <li class="liv2"></li>
+      <li class="liv3"></li>
+    </ul>
+  </div>
+  
+  <div id="id1"></div>
+  <div id="id2"></div>
+  <div id="id3"></div>
+  <div id="id4"></div>
+  <div id="id5"></div>
+  <div id="id6"></div>
+  
+  (div.dvc$>h1+ul>li.lic$)*6
+-->
+</body>
+</html>
