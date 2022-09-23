@@ -13,6 +13,8 @@ nav {
     justify-content: space-between;
     color: white;
     height: 40px;
+    top: 0;
+    position: sticky;
 }
 nav > ul {
     display: flex;
@@ -30,11 +32,11 @@ header > section {
     margin: 20px;
 }
 .header_left {
-    width: 30%;
+    width: 80%;
     text-align: center;
 }
 .header_right {
-    width: 70%;
+    width: 80%;
 }
 
 main {
@@ -42,7 +44,7 @@ main {
     background-color: #D9D3CC;
     display: flex;
     justify-content: space-between;
-
+    /* flex-wrap: wrap; */
 }
 main > section {
     display: flex;
@@ -60,6 +62,9 @@ footer {
     padding: 8px;
     justify-content: center;
     height: 100px;
+    bottom: 0;
+    position: sticky;
+
 }
 footer > div,
 ul {
@@ -68,4 +73,20 @@ ul {
 footer > ul {
     list-style: none;
     font-size: 12px;
+}
+
+@media only screen and (max-width:600px) {
+    header > section {
+        flex-direction: column;
+        align-items: center;
+    }
+    main {
+        width: 90%;
+        flex-direction: column;
+        align-items: center;
+    }
+    footer ul{
+        display: none;
+    }
+
 }
